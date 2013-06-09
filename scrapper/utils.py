@@ -14,13 +14,6 @@ HOSTEL_NAME_CLASS = '.propertyTitle'
 RATINGS_CLASS = '.rating'
 RATINGS_REGEX = '[-+]?[0-9]*\.?[0-9]+'
 
-def encode(text, encoding='utf-8'):
-    """
-    Encoding coercion
-    """
-    return text.encode(encoding, 'ignore') \
-        if isinstance(text, unicode) else text
-
 class CuscoHostelsBuilder(object):
     @classmethod
     def _get_pyquery(cls):
